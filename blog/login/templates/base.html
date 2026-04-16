@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Музыкальный каталог{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "styles.css" %}" />
+</head>
+<body>
+    <nav>
+        <a href="/index/">Главная</a>
+        <a href="/add_user/">Добавить пользователя</a>a
+        <a href="/users/">Все пользователи</a>
+        <a href="/login/">Авторизация</a>
+        <a href="/exit/">Выйти</a>
+    </nav>
+{% block content %} {% endblock content %}
+</body>
+</html>
+
