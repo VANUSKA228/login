@@ -23,6 +23,8 @@ urlpatterns = [
     path('index/',views.index),
     path('login/', views.login, name='login'),
     path('exit/',views.logout_view),
+    path('page1/', views.for_authorized),
+    path('page2/', views.for_director),
 ]
 
 
